@@ -8,7 +8,8 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "deploy": "gh-pages -d dist -r https://github.com/xiongwei233/chargingPile_powerScreen.git -b gh-pages"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -r https://github.com/xiongwei233/chargingPile_powerScreen.git -b gh-page"
   },
   "dependencies": {
     "axios": "^1.1.3",

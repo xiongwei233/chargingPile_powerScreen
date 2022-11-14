@@ -53,4 +53,4 @@ class HYRequest {
   }
 }
 
-export default new HYRequest("/api", import.meta.env.VITE_APP_API_TIMEOUT)
+export default new HYRequest(import.meta.env.VITE_APP_API_BASEURL, import.meta.env.VITE_APP_API_TIMEOUT)

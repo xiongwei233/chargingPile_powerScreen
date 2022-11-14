@@ -84,14 +84,14 @@ export default defineConfig(({ command, mode }) => {
 
     server: {
       host: '0.0.0.0',
-      port: Number(env.VITE_APP_PORT) || 3200,
-      proxy: {
-        '/api': {
-          target: env.VITE_APP_API_BASEURL,
-          changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api/, '')
-        }
-      }
+      port: Number(env.VITE_APP_PORT) || 3200
+      //proxy: {
+      //  '/api': {
+      //    target: env.VITE_APP_API_BASEURL,
+      //    changeOrigin: true,
+      //    rewrite: (path) => path.replace(/^\/api/, '')
+      //  }
+      //}
     }
   }
 })
